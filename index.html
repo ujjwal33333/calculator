@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+background-color:lightblue;
+text-align:center;
+}
+button{
+background-color:yellow;
+}
+.box-1{
+border:1px solid black;
+border-radius: 10mm;
+margin :100px 500px;
+background-color:white;
+}
+.box-1 input{
+background-color: lightblue;
+}
+</style>
+<body>
+
+      <div class="box-1">
+            <h1> Amount Calculator </h1>
+            <h3> Enter Bill Amount!!</h3>
+            $<input type="number" id="myNumber" value= "">
+            <h3>How many people are sharing bill?</h3>
+            <br>
+            <input type="number" id="myNumber2" value= "">
+            <br>
+            <br>
+
+            <button onclick="myFunction()">Calculate</button>
+
+
+            <p id="demo"></p>
+
+            <script>
+            function myFunction() {
+                var x=document.getElementById("myNumber").value;
+                var y=document.getElementById("myNumber2").value;
+								if (x =="")
+									alert("Enter Value");
+								else if (y=="")
+								{	y=1;
+									document.getElementById("demo").innerHTML = x/y;
+								}
+            }
+            </script>
+      </div>
+
+
+</body>
+</html>
