@@ -23,10 +23,10 @@ background-color: lightblue;
       <div class="box-1">
             <h1> Amount Calculator </h1>
             <h3> Enter Bill Amount!!</h3>
-            $<input type="number" id="myNumber" value= "">
+            $<input type="number" id="myNumber" placeholder="enter amount" value=''>
             <h3>How many people are sharing bill?</h3>
             <br>
-            <input type="number" id="myNumber2" value= "">
+            <input type="number" id="myNumber2" placeholder="number of people" value=''>
             <br>
             <br>
 
@@ -42,12 +42,12 @@ background-color: lightblue;
 								if (x =="")
 									alert("Enter Value");
 								else if (y=="")
-								{	y=1;
-									document.getElementById("demo").innerHTML = x/y;
-								}
+									y=1;
+								document.getElementById("demo").innerHTML = x/y;
             }
             </script>
       </div>
+
 
 </body>
 </html>
